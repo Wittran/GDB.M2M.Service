@@ -8,7 +8,7 @@ https://www.scb.se/krita
 # Getting Started
 The application is pretty simple. Point out your read directory and run the application. When you add a new file to the read directory it will post the file. It uses the directory structure to define the meta data. A certificate is used for authentication. Please contact VINN- or KRITA-support regarding the certificate.
 
-1. Install the certificate on the machine. (as the same user running the application)
+1. Install the certificate on the machine, (as the same user running the application) - i.e. in the installation guide, choose active user, NOT local machine. 
 2. Make sure that your `app.config` is correct. _(More information in the __Configuration__-section below)_
 3. Create your folder structure. _(More information in the __Directory structure__-section below)_
 4. Build the project.
@@ -36,7 +36,7 @@ All necessary configurations should be applied to `app.config`, mainly the `requ
 https://m2m.gdb.scb.se/m2m/v1
 * __PingInterval__ - Used when you want to ping the api on a regular basis. Convenient when testing, but probably not suitable for production.
 * __OrganisationNumber__ - Swedish Organisationnummer for the reportee. Eg. 9990000045. Not needed when using directory structure.
-* __StatisticalProgram__ - Statististical program (Sv. undersökning). Either _VINN_ or _KRITA_. Not needed when using directory structure.
+* __StatisticalProgram__ - Statististical program (Sv. undersÃ¶kning). Either _VINN_ or _KRITA_. Not needed when using directory structure.
 * __FileFormat__ - Type of form. Eg V40, V10, KRITA_MONTHLY. Not needed when using directory structure.
 * __Version__ - Version of the form. Eg 1, 3, 5. Usually not needed at all, but the API supports it.
 
